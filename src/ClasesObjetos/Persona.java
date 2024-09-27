@@ -1,3 +1,5 @@
+package ClasesObjetos;
+
 public class Persona {
     // Atributos de la clase Persona
     private String nombre;
