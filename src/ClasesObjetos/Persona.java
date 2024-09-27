@@ -4,11 +4,13 @@ public class Persona {
     // Atributos de la clase Persona
     private String nombre;
     private int edad;
+    private String profesion;
 
     // Constructor de la clase Persona
-    public Persona(String nombres, int edad){
+    public Persona(String nombres, int edad, String profesion){
         this.nombre = nombres;
         this.edad = edad;
+        this.profesion = profesion;
     }
 
     // Método para mostrar la informacion de la Persona
@@ -23,5 +25,10 @@ public class Persona {
         } else {
             System.out.println("Hola, me llamo " + this.nombre + " y tengo " + this.edad + " año");
         }
+    }
+
+    // Método trabajar
+    public void trabajar(){
+        System.out.println("Mi nombres es " + this.nombre + " y trabajo de " + this.profesion);
     }
 }
